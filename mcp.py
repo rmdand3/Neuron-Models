@@ -6,10 +6,10 @@ def mcp_check_2ip(arr): #Common function for all 2 input Neurons with a specifie
     #X1, X2 = input("Enter the two inputs: ").split()
     W1, W2 = input("Enter the weights : ").split()
     
-    W1 = int(W1)
+    W1 = int(W1) #Inputs for the weights
     W2 = int(W2)
 
-    t = int(input("Enter the threshold: "))
+    t = int(input("Enter the threshold: ")) #Taking input of the threshold on the neuron
     flag = 0
     for i, j, k in zip(ip1, ip2, arr):
         current_sum = i*W1 + j*W2
@@ -33,7 +33,7 @@ def mcp_check_not():
     else:
         print('The model is training.\n')
 
-OR = [0,1,1,1]
+OR = [0,1,1,1] #Predefined Output Arrays
 AND = [0,0,0,1]
 
 while choice in (0,1,2,3):
